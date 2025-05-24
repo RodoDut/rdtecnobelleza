@@ -142,6 +142,8 @@ This repository contains the customization of a WordPress site for managing rese
 ## 📞 Contact
 Questions or want to know more? Visit [rdtecnobelleza.net](https://rdtecnobelleza.net) or contact us through the website form.
 
+[![Contactar por WhatsApp](https://img.shields.io/badge/WhatsApp-Contactar-25D366?logo=whatsapp&logoColor=white)](https://wa.me/5493415795765?text=I%20contact%20you%20because%20I've%20been%20read%20your%20rdtecnobelleza%20repository%20on%20github)
+
 ---
 
-> Project developed and customized by RD-Tecno Belleza
+> Project developed and customized by Rodolfo Duttweiler of RD-Tecno.
