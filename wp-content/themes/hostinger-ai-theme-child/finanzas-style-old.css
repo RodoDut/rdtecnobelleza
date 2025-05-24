@@ -1,0 +1,971 @@
+/**
+ * Estilos para el shortcode de balances
+ */
+
+/* Base Styles */
+.balance-page {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background-color: #efdeba;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    border: 1px solid #e2e8f0;
+  }
+  
+  /* Page Header */
+  .balance-page .page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .balance-page .page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+  }
+  
+  .balance-page .date-filter {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .balance-page .date-range-picker {
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .balance-page .date-input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    padding-right: 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .balance-page .icon-calendar {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+  }
+  
+  .balance-page .filter-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .balance-page .filter-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Tabs */
+  .balance-page .tabs {
+    margin-bottom: 2rem;
+  }
+  
+  .balance-page .tabs-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .balance-page .tab-trigger {
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .balance-page .tab-trigger:hover {
+    color: #1e293b;
+  }
+  
+  .balance-page .tab-trigger.active {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+  }
+  
+  .balance-page .tab-content {
+    display: none;
+  }
+  
+  .balance-page .tab-content.active {
+    display: block;
+  }
+  
+  /* Cards */
+  .balance-page .card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .balance-page .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .balance-page .card-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .balance-page .card-content {
+    padding: 1.5rem;
+  }
+  
+  /* Stats Cards */
+  .balance-page .stats-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .balance-page .stat-card .card-header {
+    padding-bottom: 0.5rem;
+    border-bottom: none;
+  }
+  
+  .balance-page .stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  
+  .balance-page .stat-change {
+    font-size: 0.75rem;
+    color: #10b981;
+    margin: 0;
+  }
+  
+  /* Detail Cards */
+  .balance-page .detail-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  /* Transactions */
+  .balance-page .transactions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .balance-page .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .balance-page .transaction-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .balance-page .transaction-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .balance-page .transaction-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #eff6ff;
+    border-radius: 50%;
+    color: #3b82f6;
+  }
+  
+  .balance-page .transaction-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .balance-page .transaction-time {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin: 0;
+  }
+  
+  .balance-page .transaction-amount {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Payment Methods */
+  .balance-page .payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .balance-page .payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .balance-page .payment-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .balance-page .payment-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #eff6ff;
+    border-radius: 50%;
+    color: #3b82f6;
+  }
+  
+  .balance-page .payment-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .balance-page .payment-percentage {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Services & Products */
+  .balance-page .full-width {
+    width: 100%;
+  }
+  
+  .balance-page .card-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .balance-page .search-box {
+    position: relative;
+    min-width: 200px;
+  }
+  
+  .balance-page .search-box input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    padding-left: 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .balance-page .icon-search {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+  }
+  
+  .balance-page .select-wrapper {
+    position: relative;
+    min-width: 180px;
+  }
+  
+  .balance-page .select-wrapper select {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    padding-right: 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    appearance: none;
+    background-color: white;
+  }
+  
+  .balance-page .icon-chevron-down {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+    pointer-events: none;
+  }
+  
+  .balance-page .services-list,
+  .balance-page .products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .balance-page .service-item,
+  .balance-page .product-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .balance-page .service-item:last-child,
+  .balance-page .product-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .balance-page .service-name,
+  .balance-page .product-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .balance-page .service-category,
+  .balance-page .product-category {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin: 0;
+  }
+  
+  .balance-page .service-stats,
+  .balance-page .product-stats {
+    text-align: right;
+  }
+  
+  .balance-page .service-price,
+  .balance-page .product-price {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .balance-page .service-count,
+  .balance-page .product-count {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin: 0;
+  }
+  
+  /* Icons */
+  .balance-page [class^="icon-"] {
+    font-family: "dashicons";
+  }
+  
+  .balance-page .icon-calendar:before {
+    content: "\f508";
+  }
+  
+  .balance-page .icon-filter:before {
+    content: "\f536";
+  }
+  
+  .balance-page .icon-dollar:before {
+    content: "\f526";
+  }
+  
+  .balance-page .icon-user:before {
+    content: "\f110";
+  }
+  
+  .balance-page .icon-card:before {
+    content: "\f528";
+  }
+  
+  .balance-page .icon-clock:before {
+    content: "\f469";
+  }
+  
+  .balance-page .icon-search:before {
+    content: "\f179";
+  }
+  
+  .balance-page .icon-chevron-down:before {
+    content: "\f347";
+  }
+  
+  /* Estilos para los gráficos */
+  .balance-page .chart-container {
+    margin-bottom: 2rem;
+  }
+  
+  .balance-page .chart-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .balance-page .chart-type-selector {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background-color: white;
+  }
+  
+  /* Colores para ingresos y egresos */
+  .balance-page .transaction-amount.income {
+    color: #10b981; /* Verde para ingresos */
+  }
+  
+  .balance-page .transaction-amount.expense {
+    color: #ef4444; /* Rojo para egresos */
+  }
+  
+  /* Ajustes responsivos para los gráficos */
+  @media (max-width: 768px) {
+    .balance-page canvas {
+      height: 250px !important;
+    }
+  }
+  
+  /* Responsive */
+  @media (min-width: 640px) {
+    .balance-page .page-header {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .balance-page .page-title {
+      margin: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .balance-page .stats-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .balance-page .detail-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .balance-page .stats-cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Indicador de carga */
+  .balance-page.loading {
+    position: relative;
+  }
+  
+  .balance-page.loading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 10;
+  }
+  
+  .balance-page.loading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 11;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Mejorar estilos de los tabs */
+  .balance-page .tabs-list {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .balance-page .tab-trigger {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .balance-page .tab-trigger::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .balance-page .tab-trigger:hover::after {
+    background-color: rgba(59, 130, 246, 0.5);
+  }
+  
+  .balance-page .tab-trigger.active::after {
+    background-color: #3b82f6;
+  }
+  
+  /* Mejorar estilos de los gráficos */
+  .balance-page .chart-container {
+    transition: all 0.3s ease;
+  }
+  
+  .balance-page .chart-container:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .balance-page .export-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .balance-page .export-button:hover {
+    background-color: #059669;
+  }
+  
+  .balance-page .icon-download:before {
+    content: "\f316";
+  }
+  
+  /* Chart container styles */
+  /* Restricciones estrictas para los contenedores de gráficos */
+  .chart-container {
+    position: relative;
+    height: 500px;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important; /* Crucial para evitar desbordamiento */
+    margin-bottom: 50px;
+  }
+  
+  /* Restricciones estrictas para los canvas de gráficos */
+  .chart-container canvas {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    max-height: 500px !important;
+  }
+  
+  /* Asegurar que el contenido del tab no crezca */
+  #estadisticas-tab {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Ensure the tab content has proper dimensions */
+  .tab-content {
+    width: 100%;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  /* Responsive improvements for rd_balances shortcode */
+  
+  /* Ensure grid layouts are responsive */
+  .balance-page .stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .balance-page .detail-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Make tables scrollable on smaller screens */
+  .balance-page .transactions-list {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  
+  /* Ensure charts are responsive */
+  .balance-page .chart-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Adjust font sizes and paddings for smaller screens */
+  @media (max-width: 768px) {
+    .balance-page .page-title {
+      font-size: 1.25rem;
+    }
+  
+    .balance-page .filter-button {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+  
+    .balance-page .transaction-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .balance-page .transaction-amount {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .balance-page {
+      padding: 1rem;
+    }
+  
+    .balance-page .tabs-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .balance-page .tab-trigger {
+      font-size: 0.75rem;
+    }
+  }
+  
+  /* Estilos para el gestor de finanzas */
+  .finanzas-manager {
+      background-color: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+  }
+  
+  .finanzas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+  }
+  
+  .finanzas-header h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0;
+  }
+  
+  .add-new-button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+  }
+  
+  .add-new-button:hover {
+      background-color: var(--primary-hover);
+  }
+  
+  .finanzas-filters {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+  }
+  
+  .finanzas-list {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+      margin-bottom: 1.5rem;
+  }
+  
+  .finanzas-table {
+      width: 100%;
+      min-width: 800px; /* Ensure a minimum width for better readability */
+      border-collapse: collapse;
+  }
+  
+  .finanzas-table th,
+  .finanzas-table td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .finanzas-table th {
+      background-color: #f9fafb;
+      font-weight: bold;
+  }
+  
+  .finanzas-table tbody tr:hover {
+      background-color: #f1f5f9;
+  }
+  
+  .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+  }
+  
+  .badge-success {
+      background-color: rgba(16, 185, 129, 0.1);
+      color: rgb(16, 185, 129);
+  }
+  
+  .badge-danger {
+      background-color: rgba(239, 68, 68, 0.1);
+      color: rgb(239, 68, 68);
+  }
+  
+  .amount {
+      font-weight: 500;
+  }
+  
+  .amount.positive {
+      color: rgb(16, 185, 129);
+  }
+  
+  .amount.negative {
+      color: rgb(239, 68, 68);
+  }
+  
+  .actions {
+      display: flex;
+      gap: 0.5rem;
+  }
+  
+  .actions button {
+      background: blue;
+      border: black;
+      padding: 0.25rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: color 0.2s;
+  }
+  
+  .actions button:hover {
+      color: var(--text-color);
+  }
+  
+  .actions edit-finanza:hover {
+      color: var(--primary-color);
+  }
+  
+  .actions delete-finanza:hover {
+      color: rgb(239, 68, 68);
+  }
+  
+  .actions empty-state {
+      padding: 3rem 1rem;
+      text-align: center;
+      color: var(--text-muted);
+      background-color: var(--bg-color);
+      border-radius: var(--radius);
+  }
+  
+  /* Formulario */
+  .finanzas-form-container {
+      background-color: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+  }
+  
+  .form-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+  }
+  
+  .form-header h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0;
+  }
+  
+  .close-form {
+      background: none;
+      border: none;
+      padding: 0.25rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: color 0.2s;
+  }
+  
+  .close-form:hover {
+      color: var(--text-color);
+  }
+  
+  .finanzas-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+      .finanzas-form {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+  
+  .form-group {
+      margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 0.875rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+  }
+  
+  .input-with-icon {
+      position: relative;
+  }
+  
+  .input-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+  }
+  
+  .input-with-icon input {
+      padding-left: 2rem;
+  }
+  
+  .form-actions {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      margin-top: 1rem;
+  }
+  
+  .cancel-button {
+      padding: 0.5rem 1rem;
+      background-color: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+  }
+  
+  .submit-button {
+      padding: 0.5rem 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+      background-color: var(--primary-hover);
+  }
+  
+  /* Estados de carga */
+  .loading {
+      opacity: 0.7;
+      pointer-events: none;
+  }
+  
+  .deleting {
+      opacity: 0.5;
+      background-color: rgba(239, 68, 68, 0.1);
+  }
+  
+  /* Make tables scrollable on smaller screens */
+  .balance-page .registro-de-finanzas {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    display: block; /* Ensure the container behaves as a block element */
+  }
+  
+  .balance-page .registro-de-finanzas table {
+    width: 100%;
+    min-width: 600px; /* Ensure a minimum width for better readability */
+    border-collapse: collapse;
+  }
+
+/* Responsive adjustments for .finanzas-table */
+@media (max-width: 768px) {
+    .finanzas-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+        width: 100%;
+    }
+
+    .finanzas-table th,
+    .finanzas-table td {
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "0",
+    "max_words": 5,
+    "image_size": {
+      "width": 584,
+      "height": 650,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-title",
+    "type": "Title",
+    "max_words": 2,
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-description",
+    "type": "Description",
+    "max_words": 29,
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-title",
+    "type": "Title",
+    "max_words": 2,
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-subtitle",
+    "type": "Subtitle",
+    "max_words": 4,
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-workplace",
+    "type": "Workplace",
+    "max_words": 2,
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-date",
+    "type": "Date",
+    "max_words": 4,
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-description",
+    "type": "Description",
+    "max_words": 14,
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-subtitle",
+    "type": "Subtitle",
+    "max_words": 4,
+    "index": "2"
+  },
+  {
+    "class": "hostinger-ai-workplace",
+    "type": "Workplace",
+    "max_words": 2,
+    "index": "2"
+  },
+  {
+    "class": "hostinger-ai-date",
+    "type": "Date",
+    "max_words": 4,
+    "index": "2"
+  },
+  {
+    "class": "hostinger-ai-description",
+    "type": "Description",
+    "max_words": 14,
+    "index": "2"
+  }
+]

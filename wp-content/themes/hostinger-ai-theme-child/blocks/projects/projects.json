@@ -1,0 +1,215 @@
+[
+  {
+    "class": "hostinger-ai-title",
+    "type": "Title",
+    "max_words": 3,
+    "tone": "buissiness",
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "0",
+    "max_words": 5,
+    "image_size": {
+      "width": 340,
+      "height": 340,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-title",
+    "type": "Title",
+    "max_words": 3,
+    "tone": "buissiness",
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-project-description",
+    "type": "Description",
+    "max_words": 32,
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "1",
+    "max_words": 5,
+    "image_size": {
+      "width": 340,
+      "height": 340,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-title",
+    "type": "Title",
+    "max_words": 3,
+    "tone": "buissiness",
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-project-description",
+    "type": "Description",
+    "max_words": 32,
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "2",
+    "max_words": 5,
+    "image_size": {
+      "width": 340,
+      "height": 340,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-title",
+    "type": "Title",
+    "max_words": 3,
+    "tone": "buissiness",
+    "index": "2"
+  },
+  {
+    "class": "hostinger-ai-project-description",
+    "type": "Description",
+    "max_words": 32,
+    "index": "2"
+  },
+  {
+    "class": "hostinger-ai-project-title",
+    "type": "Title",
+    "max_words": 3,
+    "tone": "buissiness",
+    "index": "3"
+  },
+  {
+    "class": "hostinger-ai-project-description",
+    "type": "Description",
+    "max_words": 32,
+    "index": "3"
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "3",
+    "max_words": 5,
+    "image_size": {
+      "width": 584,
+      "height": 438,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "4",
+    "max_words": 5,
+    "image_size": {
+      "width": 584,
+      "height": 438,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "5",
+    "max_words": 5,
+    "image_size": {
+      "width": 584,
+      "height": 438,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "6",
+    "max_words": 5,
+    "image_size": {
+      "width": 500,
+      "height": 500,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "7",
+    "max_words": 5,
+    "image_size": {
+      "width": 500,
+      "height": 550,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "8",
+    "max_words": 5,
+    "image_size": {
+      "width": 500,
+      "height": 500,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "9",
+    "max_words": 5,
+    "image_size": {
+      "width": 500,
+      "height": 550,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "10",
+    "max_words": 5,
+    "image_size": {
+      "width": 410,
+      "height": 335,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "11",
+    "max_words": 5,
+    "image_size": {
+      "width": 625,
+      "height": 335,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "12",
+    "max_words": 5,
+    "image_size": {
+      "width": 625,
+      "height": 335,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-project-image",
+    "type": "Image",
+    "index": "13",
+    "max_words": 5,
+    "image_size": {
+      "width": 410,
+      "height": 335,
+      "crop": true
+    }
+  }
+]

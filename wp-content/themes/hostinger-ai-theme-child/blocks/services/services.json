@@ -1,0 +1,100 @@
+[
+  {
+    "class": "hostinger-ai-title",
+    "type": "Title",
+    "max_words": 3,
+    "tone": "buissiness",
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-service-image",
+    "type": "Image",
+    "index": "0",
+    "max_words": 5,
+    "image_size": {
+      "width": 340,
+      "height": 340,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-service-title",
+    "type": "Title",
+    "max_words": 3,
+    "tone": "buissiness",
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-service-description",
+    "type": "Description",
+    "max_words": 15,
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-service-image",
+    "type": "Image",
+    "index": "1",
+    "max_words": 5,
+    "image_size": {
+      "width": 340,
+      "height": 340,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-service-description",
+    "type": "Description",
+    "max_words": 15,
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-service-image",
+    "type": "Image",
+    "index": "2",
+    "max_words": 5,
+    "image_size": {
+      "width": 340,
+      "height": 340,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-service-description",
+    "type": "Description",
+    "max_words": 15,
+    "index": "2"
+  },
+  {
+    "class": "hostinger-ai-service-image",
+    "type": "Image",
+    "index": "3",
+    "max_words": 5,
+    "image_size": {
+      "width": 636,
+      "height": 455,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-service-image",
+    "type": "Image",
+    "index": "4",
+    "max_words": 5,
+    "image_size": {
+      "width": 700,
+      "height": 320,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-service-image",
+    "type": "Image",
+    "index": "5",
+    "max_words": 5,
+    "image_size": {
+      "width": 400,
+      "height": 320,
+      "crop": true
+    }
+  }
+]

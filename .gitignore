@@ -1,0 +1,43 @@
+# ----------------------------------------
+# System files
+# ----------------------------------------
+.DS_Store                                   # macOS artifacts :contentReference[oaicite:20]{index=20}
+*.log                                       # Log files :contentReference[oaicite:21]{index=21}
+
+# ----------------------------------------
+# WordPress Core
+# ----------------------------------------
+/wp-admin/                                  # Admin backend :contentReference[oaicite:22]{index=22}
+/wp-includes/                               # Core libraries :contentReference[oaicite:23]{index=23}
+index.php                                   # Front controller :contentReference[oaicite:24]{index=24}
+license.txt                                 # Licensing info :contentReference[oaicite:25]{index=25}
+readme.html                                 # WP readme :contentReference[oaicite:26]{index=26}
+wp-*.php                                    # Other root PHP files :contentReference[oaicite:27]{index=27}
+
+# ----------------------------------------
+# Configuration
+# ----------------------------------------
+wp-config.php                               # Contains DB credentials :contentReference[oaicite:28]{index=28}
+wp-config-sample.php                        # Sample config :contentReference[oaicite:29]{index=29}
+
+# ----------------------------------------
+# User Content / Uploads
+# ----------------------------------------
+/wp-content/uploads/                        # Media uploads :contentReference[oaicite:30]{index=30}
+
+# ----------------------------------------
+# Development Artifacts
+# ----------------------------------------
+/node_modules/                              # JS dependencies :contentReference[oaicite:31]{index=31}
+/.sass-cache/                               # Sass cache :contentReference[oaicite:32]{index=32}
+/dist/                                      # Build output :contentReference[oaicite:33]{index=33}
+
+# ----------------------------------------
+# Track Custom Themes & Plugins
+# ----------------------------------------
+!wp-content/themes/hostinger-ai-theme-child  # Include themes :contentReference[oaicite:34]{index=34}
+!wp-content/plugins/                        # Include plugins :contentReference[oaicite:35]{index=35}
+
+# Ignore all other themes and plugins
+/wp-content/themes/*                       # Ignore all themes :contentReference[oaicite:20]{index=20}
+

@@ -1,0 +1,109 @@
+[
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "0",
+    "max_words": 5,
+    "image_size": {
+      "width": 1100,
+      "height": 359,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "1",
+    "max_words": 5,
+    "image_size": {
+      "width": 584,
+      "height": 438,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "2",
+    "max_words": 5,
+    "image_size": {
+      "width": 584,
+      "height": 438,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "3",
+    "max_words": 5,
+    "image_size": {
+      "width": 584,
+      "height": 438,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-title",
+    "type": "Title",
+    "max_words": 3,
+    "tone": "buissiness",
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-description",
+    "type": "Description",
+    "max_words": 25,
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "4",
+    "max_words": 5,
+    "image_size": {
+      "width": 273,
+      "height": 462,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "5",
+    "max_words": 5,
+    "image_size": {
+      "width": 273,
+      "height": 462,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "6",
+    "max_words": 5,
+    "image_size": {
+      "width": 350,
+      "height": 300,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-image",
+    "type": "Image",
+    "index": "7",
+    "max_words": 5,
+    "image_size": {
+      "width": 750,
+      "height": 300,
+      "crop": true
+    }
+  },
+  {
+    "class": "hostinger-ai-cta-button",
+    "type": "CTA Button",
+    "max_words": 2,
+    "index": "0"
+  }
+]

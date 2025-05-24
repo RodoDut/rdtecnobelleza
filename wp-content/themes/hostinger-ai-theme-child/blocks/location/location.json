@@ -1,0 +1,26 @@
+[
+  {
+    "class": "hostinger-ai-title",
+    "type": "Title",
+    "max_words": 2,
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-description",
+    "type": "Description",
+    "max_words": 8,
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-title",
+    "type": "Title",
+    "max_words": 2,
+    "index": "1"
+  },
+  {
+    "class": "hostinger-ai-title",
+    "type": "Title",
+    "max_words": 2,
+    "index": "2"
+  }
+]

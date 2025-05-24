@@ -1,0 +1,103 @@
+/* Estilos para el botón */
+.rd-appointment-button {
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #f2daaa;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    background-color: #038D71;           /* rgba(3, 101, 41, 0.7);*/
+   /* transition: background-color 0.3s ease;*/
+}
+
+.rd-appointment-button:hover{
+    background-color: #07DBB1;
+}
+
+/* Estilos para el popup */
+.rd-appointment-popup {
+    position: fixed;
+    top: 0%;
+    left: 27%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Oculto por defecto */
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+/* Clase active que muestra el popup */
+.rd-appointment-popup.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 95vh;
+    padding: 20px;      /* Espacio en los bordes para móviles */
+}
+
+/* Contenido del popup */
+.rd-appointment-popup-content {
+    position: relative;
+    background-color: transparent;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 6px;
+    /*padding: 30px;*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Centrado horizontal en caso de overflow vertical */
+    max-height: 80vh;   /* Para que nunca ocupe más del 90% del alto de la pantalla */
+    overflow-y: auto;
+}
+
+/* Botón de cierre */
+.rd-close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.rd-close-popup:hover {
+    color: #333;
+}
+
+/* Cuerpo del popup */
+.rd-appointment-popup-body {
+    margin-top: 5px;
+}
+
+/* Ajustes de responsive */
+@media (max-width: 768px) {
+    .rd-appointment-popup {
+        position: fixed;
+        top: 1%;
+        left: 1%;
+        bottom: 1%;
+        max-width: 87vw;
+        height: 90%;
+    }
+ 
+    .rd-appointment-popup.active {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 95vh;
+              /* Espacio en los bordes para móviles */
+        padding-right: 5%;
+    }
+ 
+    .rd-appointment-popup-content {
+        width: 95%;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "class": "hostinger-ai-subtitle",
+    "type": "Subtitle",
+    "max_words": 2,
+    "index": "0"
+  },
+  {
+    "class": "hostinger-ai-testimonial-image",
+    "type": "Image",
+    "index": "0",
+    "max_words": 5,
+    "image_size": {
+      "width": 98,
+      "height": 108,
+      "crop": true
+    },
+    "default_content": "man face"
+  },
+  {
+    "class": "hostinger-ai-testimonial-text",
+    "type": "Testimonial",
+    "index": "0",
+    "max_words": 14,
+    "prefix": "”",
+    "suffix": "”"
+  },
+  {
+    "class": "hostinger-ai-testimonial-image",
+    "type": "Image",
+    "index": "1",
+    "max_words": 5,
+    "image_size": {
+      "width": 98,
+      "height": 108,
+      "crop": true
+    },
+    "default_content": "woman face"
+  },
+  {
+    "class": "hostinger-ai-testimonial-text",
+    "type": "Testimonial",
+    "index": "1",
+    "max_words": 14,
+    "prefix": "”",
+    "suffix": "”"
+  },
+  {
+    "class": "hostinger-ai-testimonial-image",
+    "type": "Image",
+    "index": "2",
+    "max_words": 5,
+    "image_size": {
+      "width": 400,
+      "height": 450,
+      "crop": true
+    },
+    "default_content": "man face"
+  },
+  {
+    "class": "hostinger-ai-testimonial-text",
+    "type": "Testimonial",
+    "index": "2",
+    "max_words": 24,
+    "prefix": "”",
+    "suffix": "”"
+  },
+  {
+    "class": "hostinger-ai-testimonial-image",
+    "type": "Image",
+    "index": "3",
+    "max_words": 5,
+    "image_size": {
+      "width": 180,
+      "height": 200,
+      "crop": true
+    },
+    "default_content": "man face"
+  },
+  {
+    "class": "hostinger-ai-testimonial-image",
+    "type": "Image",
+    "index": "4",
+    "max_words": 5,
+    "image_size": {
+      "width": 180,
+      "height": 200,
+      "crop": true
+    },
+    "default_content": "woman face"
+  },
+  {
+    "class": "hostinger-ai-background-image",
+    "type": "Image",
+    "index": "0",
+    "max_words": 5,
+    "image_size": {
+      "width": 1920,
+      "height": 800,
+      "crop": true
+    }
+  }
+]
